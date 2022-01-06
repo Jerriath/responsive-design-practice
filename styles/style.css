@@ -13,7 +13,7 @@
     left: 0;
     right: 0;
     margin: 0;
-    z-index: 9;
+    z-index: 999;
 }
 
 .main-header {
@@ -126,22 +126,68 @@ main header p {
     grid-template-rows: repeat(5, 1fr);
     grid-gap: .5rem;
     padding: 0 2rem;
+    margin: 0 auto;
     height: calc(576px + 3.5rem);
+    max-width: 100rem;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .main-feed-grid article {
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 }
 
 .main-feed-grid article img {
+    width: 100%;
     height: 100%;
-    width: auto;
     transition-property: transform;
     transition-duration: .5s;
     transition-timing-function: cubic-bezier(0,0,.2,1);
     transform: scale(1.03);
     position: absolute;
+    object-fit: cover;
+}
+
+.main-feed-grid article:hover img {
+    transform: scale(1);
+}
+
+.main-feed-grid article::after {
+    background-image: linear-gradient(180deg, transparent 0, #000);
+    position: absolute;
+    top: 0;
+    right: -1px;
+    left: -1px;
+    bottom: -1px;
+    content: "";
+}
+
+.main-feed-grid article div {
+    z-index: 9;
+    color: white;
+    padding: 24px;
+
+}
+
+.main-feed-grid article div h3 {
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 2.4rem;
+}
+
+.main-feed-grid article div h4 {
+    font-family: "Teko";
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.small-article h3 {
+    font-weight: 700 !important;
+    font-size: 1.3rem !important;
+    line-height: 1.2em;
 }
 
 .large-article-1 {
@@ -149,23 +195,48 @@ main header p {
 }
 
 
-.large-article-2 {
-    grid-area: small1;
-
-}
 .small-article-1 {
-    grid-area: small2;
-
+    grid-area: small1;
 }
-
 .small-article-2 {
-    grid-area: medium1;
-
+    grid-area: small2;
 }
 
-.medium-article{
-    grid-area: large2;
+.medium-article {
+    grid-area: medium1;
+}
 
+.medium-article div {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.medium-article div h3 {
+    font-size: 1.5rem !important;
+    margin: 0 auto;
+    line-height: 1.2em;
+}
+
+.medium-article div button {
+    margin: 0 auto;
+    margin-top: 1em;
+    padding: 0 1.5rem;
+    height: 3rem;
+    color: white;
+    font-weight: 400;
+    background: none;
+    box-shadow: inset 0 0 0 1px #fff;
+    border: none;
+    border-radius: 1.5rem;
+}
+
+.large-article-2{
+    grid-area: large2;
 }
 
 .main-feed-grid article div {

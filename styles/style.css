@@ -168,7 +168,8 @@ main header p {
     z-index: 9;
     color: white;
     padding: 24px;
-
+    position: absolute;
+    bottom: 0;
 }
 
 .main-feed-grid article div h3 {
@@ -239,7 +240,7 @@ main header p {
     grid-area: large2;
 }
 
-.main-feed-grid article div {
-    position: absolute;
-    bottom: 0;
+.main-feed-ad {
+    text-align: center;
+    margin: 1.5em 0;
 }

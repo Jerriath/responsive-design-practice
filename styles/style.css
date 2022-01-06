@@ -1,7 +1,9 @@
 /*---------- Table of Contents ----------
-    I. Main Header styles
-    II. Main Feed styles
-
+    I.   Main Header styles
+    II.  Main Feed styles
+    III. Popular Section styles
+    IV.  
+    V.   
 -----------------------------------------*/
 
 
@@ -107,7 +109,7 @@ main header h2 svg {
 main header p {
     text-align: right;
     width: 50%;
-    font-family: "Lato";
+    font-family: "Lato", sans-serif;
     font-size: 32px;
     color: rgb(80, 86, 102);
     margin: auto 0;
@@ -173,13 +175,13 @@ main header p {
 }
 
 .main-feed-grid article div h3 {
-    font-family: "Lato";
+    font-family: "Lato", sans-serif;
     font-weight: 900;
     font-size: 2.4rem;
 }
 
 .main-feed-grid article div h4 {
-    font-family: "Teko";
+    font-family: "Teko", sans-serif;
     font-weight: 400;
     font-size: 1rem;
     letter-spacing: 0.1rem;
@@ -243,4 +245,53 @@ main header p {
 .main-feed-ad {
     text-align: center;
     margin: 1.5em 0;
+}
+
+
+
+/*----- Popular Section styles -----*/
+.popular {
+    background-color: #f7f8f8;
+    padding: 4em .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.popular h2 {
+    font-size: 1.75rem;
+    letter-spacing: -0.1rem;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 4rem;
+    color: #a7aab2;
+    font-weight: 400;
+}
+
+.popular-articles {
+    display: flex;
+    margin: 0 3em;
+    padding: 1.5rem;
+    justify-content: space-between;
+}
+
+.popular-articles article {
+    text-align: left;
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+.popular-articles article h3 {
+    color: rgb(204, 0, 153);
+    font-family: "Oswald", sans-serif;
+    font-size: 38px;
+
+}
+
+.popular-articles article p {
+    padding: 0 1rem;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5em;
+    font-weight: 600;
+    font-size: 1.05rem;
 }

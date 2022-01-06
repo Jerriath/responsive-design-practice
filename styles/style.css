@@ -87,6 +87,7 @@ main header {
     display: flex;
     max-width: 80rem;
     margin: 0 auto;
+    margin-bottom: 2rem;
     padding: 2% 2rem;
     align-items: center;
     box-sizing: border-box;
@@ -110,4 +111,64 @@ main header p {
     font-size: 32px;
     color: rgb(80, 86, 102);
     margin: auto 0;
+}
+
+.main-feed-grid {
+    display: grid;
+    grid-template-areas: 
+    "large1  large1  large1  large1  small1 small1 small2 small2"
+    "large1  large1  large1  large1  small1 small1 small2 small2"
+    "large1  large1  large1  large1  large2 large2 large2 large2"
+    "medium1 medium1 medium1 medium1 large2 large2 large2 large2"
+    "medium1 medium1 medium1 medium1 large2 large2 large2 large2"
+    ;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: .5rem;
+    padding: 0 2rem;
+    height: calc(576px + 3.5rem);
+}
+
+.main-feed-grid article {
+    overflow: hidden;
+    position: relative;
+}
+
+.main-feed-grid article img {
+    height: 100%;
+    width: auto;
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0,0,.2,1);
+    transform: scale(1.03);
+    position: absolute;
+}
+
+.large-article-1 {
+    grid-area: large1;
+}
+
+
+.large-article-2 {
+    grid-area: small1;
+
+}
+.small-article-1 {
+    grid-area: small2;
+
+}
+
+.small-article-2 {
+    grid-area: medium1;
+
+}
+
+.medium-article{
+    grid-area: large2;
+
+}
+
+.main-feed-grid article div {
+    position: absolute;
+    bottom: 0;
 }

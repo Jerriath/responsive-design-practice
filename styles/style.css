@@ -22,6 +22,7 @@
     height: 3rem;
     align-content: center;
     background-color: rgb(247,248,248);
+    box-shadow: 0 0 48px rgb(0 0 0 / 15%);
 }
 
 .logo {
@@ -45,6 +46,7 @@
     padding: .675rem 1rem;
     cursor: pointer;
     color: rgb(80, 86, 102);
+    overflow: none;
 }
 
 .selected {
@@ -79,5 +81,33 @@
 main {
     margin-top: calc(3rem + 1.75em + 20px);
     padding-top: 2em;
-    
+}
+
+main header {
+    display: flex;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2% 2rem;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+main header h2 {
+    width: 50%;
+}
+
+main header h2 svg {
+    max-width: 38%;
+    height: auto;
+    padding: 1em 0;
+    width: 50%;
+}
+
+main header p {
+    text-align: right;
+    width: 50%;
+    font-family: "Lato";
+    font-size: 32px;
+    color: rgb(80, 86, 102);
+    margin: auto 0;
 }

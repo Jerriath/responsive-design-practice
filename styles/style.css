@@ -322,6 +322,11 @@ main header p {
     flex-shrink: 0;
     padding: 1rem;
     position: relative;
+    cursor: pointer;
+}
+
+.latest-articles article:hover p {
+    color: black;
 }
 
 .latest-articles article div {
@@ -370,6 +375,11 @@ main header p {
     padding-right: 42px;
     font-weight: 700;
     height: 3rem;
+}
+
+.all-news button:hover {
+    color: black;
+    cursor: pointer;
 }
 
 

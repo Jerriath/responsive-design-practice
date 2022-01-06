@@ -384,6 +384,26 @@ main header p {
 
 
 
+/*----- Explore Section styles -----*/
+.explore {
+    padding: 7rem 2rem;
+    max-width: 100rem;
+    background-color: rgb(247, 248, 248);
+}
+
+.explore h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 4rem;
+}
+
+.explore section {
+    display: flex;
+    padding: 2rem 0;
+}
+
+
+
 /*----- General Styles -----*/
 .anchor-text {
     color: rgb(0, 204, 204);

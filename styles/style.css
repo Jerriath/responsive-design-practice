@@ -548,17 +548,6 @@ form button {
     font-weight: bold;
 }
 
-.social-icon {
-    fill: rgb(150, 150, 150);
-    margin-left: 1rem;
-    transition: fill 0.2s linear;
-    cursor: pointer;
-}
-
-.social-icon:hover {
-    fill: white;
-}
-
 
 
 /*----- Preview Section Styles -----*/
@@ -793,6 +782,52 @@ form button {
 
 
 
+/*----- Footer Section styles -----*/
+
+.footer {
+    padding: 4rem 0;
+    background-color: black;
+}
+
+.footer-sizing {
+    box-sizing: border-box;
+    padding: 0 2rem;
+    margin: 0 auto;
+    display: flex;
+    max-width: 80rem;
+}
+
+.column-1 {
+    box-sizing: border-box;
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 0.75rem;
+}
+
+.column-1 div {
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+.column-1 h2 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.07rem;
+}
+
+.social-sizing {
+    box-sizing: content-box;
+    min-width: 100%;
+    margin-bottom: 0 !important;
+}
+
+.column-2 {
+    width: 25%;
+}
+
+
+
 /*----- General Styles -----*/
 .anchor-text {
     color: rgb(0, 204, 204);
@@ -815,5 +850,25 @@ form button {
     font-family: "Oswald", sans-serif;
 }
 
-br {
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-socials {
+    min-width: 250px;
+    display: flex;
+    margin-bottom: 0 !important;
+    justify-content: space-between;
+}
+
+.social-icon {
+    fill: rgb(150, 150, 150);
+    transition: fill 0.2s linear;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.social-icon:hover {
+    fill: white;
 }

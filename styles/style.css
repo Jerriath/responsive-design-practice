@@ -680,7 +680,115 @@ form button {
 /*----- Work Section styles -----*/
 
 .work {
-    
+    padding: 6em 0 2em 0;
+
+}
+
+.work-sizing {
+    box-sizing: border-box;
+    padding: 0 2rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-sizing header {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0.75rem;
+}
+
+.work-sizing header div {
+    margin-bottom: 0.5rem;
+    color: rgb(204, 0, 153);
+    font-size: 1.25rem;
+    letter-spacing: 0.15rem;
+}
+
+.work-sizing header h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+
+}
+
+.work-sizing header p {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    color: rgb(80, 86, 102);
+}
+
+.work-sizing header button {
+    border: 0;
+    background-color: rgb(0, 204, 204);
+    color: white;
+    padding: 0 1.5rem;
+    height: 3rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.work-sizing header button:hover {
+    background-color: rgb(0, 220, 220);
+}
+
+.work-sizing aside {
+    box-sizing: border-box;
+    width:  50%;
+    padding: 0.75rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.aside-item {
+    box-sizing: border-box;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+}
+
+.aside-item div {
+    width: 7rem;
+}
+
+.aside-item p {
+    margin-left: 1rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.work-sizing footer {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+}
+
+.work-sizing footer ul {
+    display: flex;
+}
+
+.work-sizing footer ul li {
+    box-sizing: border-box;
+    padding: 0.25rem;
+    flex-basis: 12.5%;
+    max-width: 12.5%;
+}
+
+.work-sizing footer ul li img {
+    opacity: 0.5;
+    transition: opacity 0.2s linear;
+    cursor: pointer;
+}
+
+.work-sizing footer ul li img:hover {
+    opacity: 1;
 }
 
 

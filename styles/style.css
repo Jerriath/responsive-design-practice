@@ -557,6 +557,122 @@ form button {
 
 
 
+/*----- Preview Styles -----*/
+
+.preview {
+    padding: 7rem 0;
+    background-color: #f7f8f8;
+}
+
+.preview-spacing {
+    box-sizing: border-box;
+    max-width: 80rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+.preview-spacing h2 {
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.videos {
+    display: flex;
+
+}
+
+.main-video {
+    flex-grow: 1;
+    background-color: black;
+}
+
+.iframe-position {
+    padding-top: 56.25%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.iframe-position iframe {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    object-fit: cover;
+    background-position: 50% 50%;
+    object-position: 50% 50%;
+}
+
+.main-video header {
+    padding: 2.75rem 1.5rem;
+
+}
+
+.main-video header h3 {
+    font-size: 1.125rem;
+    line-height: 1.75em;
+    color: white;
+    font-weight: 700;
+}
+
+.main-video header p {
+    color: rgb(167, 170, 178);
+    font-size: 12px;
+    line-height: 1.5rem;
+}
+
+.recommended {
+    width: 300px;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.recommended-preview {
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.recommended-preview div {
+    padding-top: 56.25%;
+    position: relative;
+    overflow: hidden;
+}
+
+.recommended-preview div img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    object-fit: cover;
+    background-position: 50% 50%;
+    object-position: 50% 50%;
+}
+
+.recommended-preview h4 {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color 0.2s linear;
+}
+
+.recommended-preview h4:hover {
+    text-decoration-color: rgba(204, 0, 153, 0.5);
+    text-decoration-thickness: 2px;
+}
+
+
+
 /*----- General Styles -----*/
 .anchor-text {
     color: rgb(0, 204, 204);

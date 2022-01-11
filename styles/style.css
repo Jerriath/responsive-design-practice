@@ -475,7 +475,6 @@ main header p {
     background-color: black;
     padding: 4em;
     text-align: center;
-
 }
 
 .newsletter h2 {
@@ -485,7 +484,7 @@ main header p {
     letter-spacing: -0.1rem;
     line-height: 1em;
     margin-bottom: 1rem;
-
+    display: inline;
 }
 
 .newsletter p {
@@ -501,7 +500,14 @@ form {
     margin-bottom: 1rem;
     border-radius: 0.25rem;
     align-items: center;
-    
+    justify-content: center;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+form input {
+    flex: 1;
+    border: 0;
 }
 
 

@@ -466,9 +466,101 @@ main header p {
 
 
 
+/*----- Newsletter styles -----*/
+.newsletter {
+    background-image: url("https://next.tnwcdn.com/assets/next/img/spacesbg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+    background-color: black;
+    padding: 4em;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    letter-spacing: -0.1rem;
+    line-height: 1em;
+    display: inline;
+}
+
+.newsletter p {
+    color: white;
+    font-size: 1.1em;
+}
+
+form {
+    position: relative;
+    display: flex;
+    background-color: white;
+    box-shadow: 0 4px 24px rgb(0 0 0 / 25%);
+    border-radius: 0.25rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 720px;
+    margin: 0 auto;
+    border-radius: 0.25rem;
+}
+
+form svg {
+    margin: 0 0.75rem;
+}
+
+form input {
+    flex: 1;
+    border: 0;
+    padding: 0.75rem 0;
+    line-height: 1.5em;
+    font-size: 1rem;
+    color: rgb(80, 86, 102);
+}
+
+form input:focus {
+    border: 0;
+    outline: 0;
+}
+
+.email-svg {
+    fill: rgb(220, 220, 220);
+}
+
+form input::placeholder {
+    color: rgb(175, 175, 175);
+}
+
+form button {
+    box-sizing: border-box;
+    background-color:rgb(204, 0, 153);
+    border: 0;
+    color: white;
+    height: 3rem;
+    padding: 0 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    font-weight: bold;
+}
+
+.social-icon {
+    fill: rgb(150, 150, 150);
+    margin-left: 1rem;
+    transition: fill 0.2s linear;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    fill: white;
+}
+
+
+
 /*----- General Styles -----*/
 .anchor-text {
     color: rgb(0, 204, 204);
+    cursor: pointer;
 }
 
 .small-caps {
@@ -485,4 +577,7 @@ main header p {
 
 .oswald-font {
     font-family: "Oswald", sans-serif;
+}
+
+br {
 }

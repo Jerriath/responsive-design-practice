@@ -1,9 +1,13 @@
 /*---------- Table of Contents ----------
-    I.   Main Header styles
-    II.  Main Feed styles
-    III. Popular Section styles
-    IV.  
-    V.   
+    I.    Main Header styles
+    II.   Main Feed styles
+    III.  Popular Section styles
+    IV.   Latest Section styles
+    V.    Explore Section styles
+    VI.   Newsletter Section styles
+    VII.  Preview Section styles
+    VIII. Work Section styles
+    IX.   Footer Section styles
 -----------------------------------------*/
 
 
@@ -466,7 +470,7 @@ main header p {
 
 
 
-/*----- Newsletter styles -----*/
+/*----- Newsletter Section styles -----*/
 .newsletter {
     background-image: url("https://next.tnwcdn.com/assets/next/img/spacesbg.png");
     background-size: cover;
@@ -557,7 +561,7 @@ form button {
 
 
 
-/*----- Preview Styles -----*/
+/*----- Preview Section Styles -----*/
 
 .preview {
     padding: 7rem 0;
@@ -669,6 +673,14 @@ form button {
 .recommended-preview h4:hover {
     text-decoration-color: rgba(204, 0, 153, 0.5);
     text-decoration-thickness: 2px;
+}
+
+
+
+/*----- Work Section styles -----*/
+
+.work {
+    
 }
 
 

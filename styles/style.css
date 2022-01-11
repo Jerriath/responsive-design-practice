@@ -483,7 +483,6 @@ main header p {
     color: white;
     letter-spacing: -0.1rem;
     line-height: 1em;
-    margin-bottom: 1rem;
     display: inline;
 }
 
@@ -497,17 +496,63 @@ form {
     display: flex;
     background-color: white;
     box-shadow: 0 4px 24px rgb(0 0 0 / 25%);
-    margin-bottom: 1rem;
     border-radius: 0.25rem;
     align-items: center;
     justify-content: center;
     max-width: 720px;
     margin: 0 auto;
+    border-radius: 0.25rem;
+}
+
+form svg {
+    margin: 0 0.75rem;
 }
 
 form input {
     flex: 1;
     border: 0;
+    padding: 0.75rem 0;
+    line-height: 1.5em;
+    font-size: 1rem;
+    color: rgb(80, 86, 102);
+}
+
+form input:focus {
+    border: 0;
+    outline: 0;
+}
+
+.email-svg {
+    fill: rgb(220, 220, 220);
+}
+
+form input::placeholder {
+    color: rgb(175, 175, 175);
+}
+
+form button {
+    box-sizing: border-box;
+    background-color:rgb(204, 0, 153);
+    border: 0;
+    color: white;
+    height: 3rem;
+    padding: 0 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    font-weight: bold;
+}
+
+.social-icon {
+    fill: rgb(150, 150, 150);
+    margin-left: 1rem;
+    transition: fill 0.2s linear;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    fill: white;
 }
 
 
@@ -532,4 +577,7 @@ form input {
 
 .oswald-font {
     font-family: "Oswald", sans-serif;
+}
+
+br {
 }

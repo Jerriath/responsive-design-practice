@@ -740,6 +740,16 @@ form button {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .newsletter {
+        padding: 4em 0;
+    }
+
+    .newsletter form {
+        max-width: 687px;
+    }
+}
+
 
 
 /*----- Preview Section Styles -----*/

@@ -640,6 +640,16 @@ main header p {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .explore div section article {
+        flex-basis: calc(33.333333333% - 1rem);
+    }
+
+    .explore div section article:nth-child(4) {
+        display: none;
+    }
+}
+
 
 
 /*----- Newsletter Section styles -----*/

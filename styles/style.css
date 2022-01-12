@@ -450,7 +450,7 @@ main header p {
     color: black;
 }
 
-.latest-articles article div {
+.latest-articles article div:nth-child(1) {
     position: relative;
     padding-top: 56.25%;
 
@@ -514,7 +514,46 @@ main header p {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .latest {
+        padding: 4rem 1.5rem;
+    }
 
+    .latest h2 {
+        text-align: center;
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+
+    .latest-articles article {
+        flex-basis: 100%;
+        max-width: 100%;
+        display: flex;
+    }
+
+    .latest-articles article div:nth-child(1) {
+        flex-basis: 25%;
+        margin-right: 1.5rem;
+        padding-top: 25%;
+    }
+
+    .latest-articles article div:nth-child(2) {
+        flex-basis: 75%;
+    }
+
+    .latest-articles article div:nth-child(2) p {
+        margin-top: 0;
+    }
+
+    .all-news {
+        display: flex;
+        justify-content: center;
+    }
+
+    .all-news button {
+        flex: 1 1 0%;
+    }
+}
 
 
 

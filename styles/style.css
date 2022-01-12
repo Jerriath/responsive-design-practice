@@ -530,7 +530,7 @@ main header p {
 }
 
 .explore div section article {
-
+    position: relative;
     background-size: cover;
     padding: 2rem 1rem;
     flex-basis: calc(20% - 1rem);
@@ -561,11 +561,6 @@ main header p {
     background-image: url("https://img-cdn.tnwcdn.com/image?fit=260%2C235&url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-hardfork.jpg&signature=77d9941cfc302cb2e25c39ab3043fa7b");
 }
 
-.explore div section article {
-    position: relative;
-
-}
-
 .explore div section article img {
     height: 2.5rem;
     margin: 0 auto 5rem auto;
@@ -581,6 +576,16 @@ main header p {
     font-size: 1rem;
     line-height: 1.5em;
     font-weight: 900;
+}
+
+@media screen and (max-width: 1023px) {
+    .explore div section article {
+        flex-basis: calc(25% - 1rem);
+    }
+
+    .explore div section article:nth-child(5) {
+        display: none;
+    }
 }
 
 
@@ -661,6 +666,16 @@ form button {
     border-top-right-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
     font-weight: bold;
+}
+
+@media screen and (max-width: 1023px) {
+    .newsletter h2 {
+        font-size: 2rem;
+    }
+
+    .newsletter form {
+        max-width: 572px;
+    }
 }
 
 
@@ -779,6 +794,16 @@ form button {
     text-decoration-thickness: 2px;
 }
 
+@media screen and (max-width: 1023px) {
+    .preview-spacing {
+        padding: 0 4rem;
+    }
+
+    .recommended div:nth-child(3) {
+        display: none;
+    }
+}
+
 
 
 /*----- Work Section styles -----*/
@@ -893,6 +918,18 @@ form button {
 
 .work-sizing footer ul li img:hover {
     opacity: 1;
+}
+
+@media screen and (max-width: 1023px) {
+    .work-sizing footer ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .work-sizing footer ul li {
+        flex-basis: 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
 }
 
 

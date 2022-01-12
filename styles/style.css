@@ -288,7 +288,6 @@ main header p {
 }
 
 @media screen and (max-width: 1023px) {
-
     main {
         margin-top: 3.5rem;
     }
@@ -328,7 +327,7 @@ main header p {
         grid-template-rows: repeat(4, 192px);
         height: auto;
         margin-bottom: 4rem;
-        }
+    }
 }
 
 
@@ -369,7 +368,6 @@ main header p {
 .popular-articles article h3 {
     color: rgb(204, 0, 153);
     font-size: 38px;
-
 }
 
 .popular-articles article p {
@@ -377,6 +375,27 @@ main header p {
     line-height: 1.5em;
     font-weight: 600;
     font-size: 1.05rem;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 2px;
+    transition: text-decoration-color 0.2s linear;
+}
+
+.popular-articles article p:hover {
+    text-decoration-color: rgba(204, 0, 153, 0.5);
+}
+
+@media screen and (max-width: 1023px) {
+    .popular-articles {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0 3em;
+        padding: 0 1.5rem;
+    }
+
+    .popular-articles article {
+        margin-bottom: 1.5rem;
+    }
 }
 
 

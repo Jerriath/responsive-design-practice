@@ -812,7 +812,7 @@ form button {
 .column-1 h2 {
     color: white;
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     letter-spacing: 0.07rem;
 }
 
@@ -825,6 +825,31 @@ form button {
 .column-2 {
     width: 25%;
 }
+
+.column-2 h3 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.column-2 ul {
+    line-height: 1.75rem;
+}
+
+.column-2 ul li {
+    transition: text-decoration 0.2s linear;
+    font-size: 1rem;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.column-2 ul li:hover {
+    text-decoration-color: rgb(0, 204, 204);
+}
+
+
 
 
 

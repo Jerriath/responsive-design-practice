@@ -31,6 +31,10 @@
     box-shadow: 0 0 48px rgb(0 0 0 / 15%);
 }
 
+.hidden-menu {
+    display: none;
+}
+
 .logo {
     height: auto;
     width: 4.125rem;
@@ -77,6 +81,43 @@
     padding: 0 1.5rem;
     font-size: 13px;
     line-height: 1.75em;
+}
+
+@media screen and (max-width: 1023px) {
+    .main-header {
+        height: 3.5rem;
+        background-color: white;
+        justify-content: left;
+        align-content: center;
+    }
+
+    .hidden-menu {
+        display: block;
+        margin: auto 1rem;
+        stroke:rgb(150, 150, 150);
+    }
+
+    .logo {
+        height: 16px;
+        margin-left: 0;
+        margin: auto 0;
+    }
+
+    .logo svg {
+        opacity: 0.3;
+    }
+
+    .spacer {
+        display: none;
+    }
+
+    .main-header nav {
+        display: none;
+    }
+
+    .email-icon {
+        display: none;
+    }
 }
 
 

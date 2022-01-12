@@ -492,6 +492,17 @@ main header p {
     cursor: pointer;
 }
 
+@media screen and (max-width: 1023px) {
+    .latest {
+        padding: 7rem 4rem;
+    }
+
+    .latest-articles article {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
 
 
 /*----- Explore Section styles -----*/

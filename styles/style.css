@@ -1195,6 +1195,17 @@ form button {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .footer-sizing {
+        padding: 0 1.5rem;
+    }
+
+    .column-1 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 
 
 /*----- General Styles -----*/

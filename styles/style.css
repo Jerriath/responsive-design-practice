@@ -316,7 +316,7 @@ main header p {
 
     .main-feed-grid {
         max-width: 100rem;
-        padding: 0 4rem;
+        padding: 0 1.5rem;
         grid-template-areas: 
         "large1  large1  large1  large1"
         "large1  large1  large1  large1"
@@ -873,6 +873,51 @@ form button {
 
     .recommended div:nth-child(3) {
         display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .preview {
+        padding: 4rem 0;
+    }
+
+    .preview-spacing {
+        padding: 0;
+        text-align: center;
+    }
+
+    .preview-spacing h2 {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .videos {
+        flex-direction: column;
+
+    }
+
+    .main-video header {
+        padding: 1.5rem;
+        text-align: left;
+        border-top: 1px solid rgb(36, 38, 44);
+    }
+
+    .recommended {
+        flex-direction: row;
+        padding: .5rem 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .recommended-preview {
+        padding: 0.5rem;
+        width: 33%;
+    }
+
+    .recommended div:nth-child(3) {
+        display: block;
+        padding-bottom: 0.5rem !important;
     }
 }
 

@@ -1049,6 +1049,52 @@ form button {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .work-sizing {
+        padding: 0 1.5rem;
+    }
+
+    .work-sizing header {
+        flex-basis: 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .work-sizing header h2 {
+        font-size: 1.75rem;
+    }
+
+    .work-sizing aside {
+        margin-top: 2rem;
+        flex-basis: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .aside-item {
+        flex-direction: column;
+    }
+
+    .aside-item div {
+        width: 6rem;
+    }
+
+    .aside-item p {
+        margin-top: 1rem;
+    }
+
+    .work-sizing footer {
+        padding: 0 1.5rem;
+    }
+
+    .work-sizing footer ul li {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
 
 
 /*----- Footer Section styles -----*/

@@ -316,7 +316,7 @@ main header p {
 
     .main-feed-grid {
         max-width: 100rem;
-        padding: 0 4rem;
+        padding: 0 1.5rem;
         grid-template-areas: 
         "large1  large1  large1  large1"
         "large1  large1  large1  large1"
@@ -386,6 +386,10 @@ main header p {
 }
 
 @media screen and (max-width: 1023px) {
+    .popular h2 {
+        margin-bottom: 2rem;
+    }
+
     .popular-articles {
         flex-direction: column;
         max-width: 100%;
@@ -395,6 +399,13 @@ main header p {
 
     .popular-articles article {
         margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .popular-articles {
+        margin: 0;
+        padding: 0 1.5rem;
     }
 }
 
@@ -439,7 +450,7 @@ main header p {
     color: black;
 }
 
-.latest-articles article div {
+.latest-articles article div:nth-child(1) {
     position: relative;
     padding-top: 56.25%;
 
@@ -500,6 +511,47 @@ main header p {
     .latest-articles article {
         flex-basis: 50%;
         max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .latest {
+        padding: 4rem 1.5rem;
+    }
+
+    .latest h2 {
+        text-align: center;
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+
+    .latest-articles article {
+        flex-basis: 100%;
+        max-width: 100%;
+        display: flex;
+    }
+
+    .latest-articles article div:nth-child(1) {
+        flex-basis: 25%;
+        margin-right: 1.5rem;
+        padding-top: 25%;
+    }
+
+    .latest-articles article div:nth-child(2) {
+        flex-basis: 75%;
+    }
+
+    .latest-articles article div:nth-child(2) p {
+        margin-top: 0;
+    }
+
+    .all-news {
+        display: flex;
+        justify-content: center;
+    }
+
+    .all-news button {
+        flex: 1 1 0%;
     }
 }
 
@@ -584,6 +636,16 @@ main header p {
     }
 
     .explore div section article:nth-child(5) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .explore div section article {
+        flex-basis: calc(33.333333333% - 1rem);
+    }
+
+    .explore div section article:nth-child(4) {
         display: none;
     }
 }
@@ -675,6 +737,16 @@ form button {
 
     .newsletter form {
         max-width: 572px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .newsletter {
+        padding: 4em 0;
+    }
+
+    .newsletter form {
+        max-width: 687px;
     }
 }
 
@@ -801,6 +873,51 @@ form button {
 
     .recommended div:nth-child(3) {
         display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .preview {
+        padding: 4rem 0;
+    }
+
+    .preview-spacing {
+        padding: 0;
+        text-align: center;
+    }
+
+    .preview-spacing h2 {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .videos {
+        flex-direction: column;
+
+    }
+
+    .main-video header {
+        padding: 1.5rem;
+        text-align: left;
+        border-top: 1px solid rgb(36, 38, 44);
+    }
+
+    .recommended {
+        flex-direction: row;
+        padding: .5rem 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .recommended-preview {
+        padding: 0.5rem;
+        width: 33%;
+    }
+
+    .recommended div:nth-child(3) {
+        display: block;
+        padding-bottom: 0.5rem !important;
     }
 }
 
@@ -932,6 +1049,52 @@ form button {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .work-sizing {
+        padding: 0 1.5rem;
+    }
+
+    .work-sizing header {
+        flex-basis: 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .work-sizing header h2 {
+        font-size: 1.75rem;
+    }
+
+    .work-sizing aside {
+        margin-top: 2rem;
+        flex-basis: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .aside-item {
+        flex-direction: column;
+    }
+
+    .aside-item div {
+        width: 6rem;
+    }
+
+    .aside-item p {
+        margin-top: 1rem;
+    }
+
+    .work-sizing footer {
+        padding: 0 1.5rem;
+    }
+
+    .work-sizing footer ul li {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
 
 
 /*----- Footer Section styles -----*/
@@ -1029,6 +1192,17 @@ form button {
     .column-2 {
         max-width: 50%;
         flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-sizing {
+        padding: 0 1.5rem;
+    }
+
+    .column-1 {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
